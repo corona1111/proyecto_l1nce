@@ -3,272 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Consejos para el cuidado de computadoras y enlaces útiles.">
-    <title>Cuidado de Computadoras</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 20px;
-            background-color: #FFFFFF ;
-            color: black;
-        }
-        header {
-            background: #007BFF;
-            color: white;
-            padding: 10px 20px;
-            text-align: center;
-        }
-        nav {
-            margin: 20px 0;
-            text-align: center;
-        }
-        nav a {
-            text-decoration: none;
-            color: #007BFF;
-            margin: 0 10px;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        section {
-            margin: 20px 0;
-        }
-        footer {
-            text-align: center;
-            margin-top: 20px;
-            padding: 10px;
-            background: red;
-            color: white;
-        }
-    </style>
+    <title>Proyecto Lince - Cuidado y Mantenimiento de PC</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
     <header>
-        <h1>Proyecto Lince (Promoviendo el desarrollo y correcto mantenimiento de equipos)</h1>
-    </header>
-    <nav>
-        <a href="https://support.microsoft.com/es-es/windows/mantener-seguro-tu-equipo-en-casa-c348f24f-a4f0-de5d-9e4a-e0fc156ab221" target="_blank">Guía de mantenimiento</a>
-        <a href="https://www.youtube.com/watch?v=y6z0Tq1a8fs" target="_blank">Video Tutorial</a>
-        <a href="https://www.adslzone.net/listas/mejores-programas/limpiar-pc/" target="_blank">Soporte Técnico</a>
-    </nav>
-    <section>
-        <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menú Desplegable</title>
-    <style>
-        /* Estilos generales */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #FFFFFF
-            color: black;
-        }
-
-        header {
-            background-color: #ff0000;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-        }
-
-        nav {
-            background-color: red;
-            padding: 0;
-        }
-
-        /* Menú desplegable */
-        .menu {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-        }
-
-        .menu li {
-            position: relative;
-        }
-
-        .menu > li > a {
-            display: block;
-            color: white;
-            text-decoration: none;
-            padding: 15px 20px;
-        }
-
-        .menu > li > a:hover {
-            background-color: red;
-        }
-
-        /* Submenú */
-        .submenu {
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            background-color: #444;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            min-width: 200px;
-            z-index: 1000;
-        }
-
-        .submenu li a {
-            display: block;
-            color: #fff;
-            text-decoration: none;
-            padding: 10px 15px;
-        }
-
-        .submenu li a:hover {
-            background-color: #555;
-        }
-
-        /* Mostrar el submenú al pasar el mouse */
-        .menu li:hover .submenu {
-            display: block;
-        }
-
-        /* Contenido principal */
-        .contenido {
-            padding: 20px;
-            text-align: center;
-        }
-
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Bienvenidos a Nuestra Página</h1>
+        <div class="logo">
+            <a href="#">Proyecto Lince - Cuidado y Mantenimiento de PC</a>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#enlaces">Enlaces de interés</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Menú</a>
+                    <div class="dropdown-content">
+                        <a href="#quienessomos">¿Quiénes somos?</a>
+                        <a href="#proposito">¿Cuál es el propósito?</a>
+                        <a href="#recomendaciones">Recomendaciones principales</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- Menú de navegación -->
-    <nav>
-        <ul class="menu">
-            <li>
-                <a href="#">Información</a>
-                <ul class="submenu">
-                    <li><a href="#quienes-somos">¿Quiénes somos?</a></li>
-                    <li><a href="#proposito">¿Cuál es el propósito?</a></li>
-                    <li><a href="#recomendaciones">Recomendaciones generales</a></li>
-                </ul>
-            </li>
-        </ul>
-    </nav>
+    <main>
+        <section id="enlaces">
+            <h2>Enlaces de interés</h2>
+            <p>Aquí puedes incluir algunos enlaces útiles sobre el cuidado y mantenimiento de PC.</p>
+        </section>
 
-    <!-- Contenido -->
-    <div class="contenido">
-        <section id="quienes-somos">
+        <section id="quienessomos">
             <h2>¿Quiénes somos?</h2>
-            <p>Somos un equipo dedicado a proporcionar información útil y de calidad para nuestros usuarios.</p>
+            <p>Somos un equipo de expertos dedicados al cuidado y mantenimiento de computadoras.</p>
         </section>
 
         <section id="proposito">
             <h2>¿Cuál es el propósito?</h2>
-            <p>Nuestro propósito es ayudar a las personas a acceder a información relevante y confiable de manera sencilla.</p>
+            <p>Proporcionamos soluciones efectivas para optimizar el rendimiento de tu PC.</p>
         </section>
 
         <section id="recomendaciones">
-            <h2>Recomendaciones generales</h2>
-            <p>1. Mantén la información actualizada.<br>
-               2. Navega con responsabilidad y respeta las fuentes.<br>
-               3. Comparte los recursos que puedan ser útiles para otros.</p>
+            <h2>Recomendaciones principales</h2>
+            <p>Te brindamos los mejores consejos para mantener tu computadora en excelente estado.</p>
         </section>
-    </div>
-</body>
-</html>
-        <h2> Consejos para el Cuidado de Computadoras
-        <h2>Recomendaciones Generales</h2>
-        <ul>
-            <li>Mantén tu computadora limpia y libre de polvo.</li>
-            <li>Evita comer o beber cerca del equipo.</li>
-            <li>Actualiza regularmente tu sistema operativo y antivirus.</li>
-            <li>Realiza copias de seguridad de tus archivos importantes.</li>
-            <li>No sobrecargues la batería y usa una base refrigerante si es necesario.</li>
-        </ul>
-    </section>
-    <footer>
-        <p>&copy; 2024 Cuidado de Computadoras | Todos los derechos reservados.</p>
-    </footer>
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Generador de Código QR</title>
-    <!-- Script de QRCode.js desde una CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
-</head>
-<body>
-    <h1>Generador de Código QR</h1>
-
-    <!-- Input para introducir el link -->
-    <label for="link">Introduce tu enlace:</label>
-    <input type="text" id="link" placeholder="https://www.ejemplo.com">
-    <button onclick="generarQR()">Generar Código QR</button>
-
-    <!-- Contenedor donde se mostrará el código QR -->
-    <div id="codigoQR"></div>
-
-    <script>
-        // Función para generar el QR
-        function generarQR() {
-            var enlace = document.getElementById('link').value;
-            var contenedor = document.getElementById('codigoQR');
-
-            // Limpiar el contenedor antes de generar un nuevo código QR
-            contenedor.innerHTML = "";
-
-            // Generar el código QR
-            var qr = new QRCode(contenedor, {
-                text: enlace,
-                width: 128,
-                height: 128
-            });
-        }
-    </script>
-    <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tríptico Interactivo</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="triptico">
-        <div class="panel" id="panel1">
-            <h2>¿Quiénes somos?</h2>
-            <p>Somos una empresa dedicada a...</p>
-            <button onclick="mostrarInfo(1)">Leer más</button>
-            <div class="info-extra" id="info1">
-                <p>Ofrecemos soluciones innovadoras...</p>
-            </div>
-        </div>
-        <div class="panel" id="panel2">
-            <h2>¿Cuál es el propósito?</h2>
-            <p>Buscamos mejorar la vida de...</p>
-            <button onclick="mostrarInfo(2)">Leer más</button>
-            <div class="info-extra" id="info2">
-                <p>Nuestro propósito es construir un futuro...</p>
-            </div>
-        </div>
-        <div class="panel" id="panel3">
-            <h2>Recomendaciones generales</h2>
-            <p>Para aprovechar al máximo...</p>
-            <button onclick="mostrarInfo(3)">Leer más</button>
-            <div class="info-extra" id="info3">
-                <p>Recuerda siempre seguir las mejores prácticas...</p>
-            </div>
-        </div>
-    </div>
-    <script src="script.js"></script>
-</body>
-</html>
+    </main>
 
 </body>
 </html>
