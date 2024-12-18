@@ -53,6 +53,134 @@
         <a href="https://www.adslzone.net/listas/mejores-programas/limpiar-pc/" target="_blank">Soporte Técnico</a>
     </nav>
     <section>
+        <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Desplegable</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 0;
+        }
+
+        /* Menú desplegable */
+        .menu {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .menu li {
+            position: relative;
+        }
+
+        .menu > li > a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;
+        }
+
+        .menu > li > a:hover {
+            background-color: #555;
+        }
+
+        /* Submenú */
+        .submenu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #444;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            min-width: 200px;
+            z-index: 1000;
+        }
+
+        .submenu li a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 15px;
+        }
+
+        .submenu li a:hover {
+            background-color: #555;
+        }
+
+        /* Mostrar el submenú al pasar el mouse */
+        .menu li:hover .submenu {
+            display: block;
+        }
+
+        /* Contenido principal */
+        .contenido {
+            padding: 20px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bienvenidos a Nuestra Página</h1>
+    </header>
+
+    <!-- Menú de navegación -->
+    <nav>
+        <ul class="menu">
+            <li>
+                <a href="#">Información</a>
+                <ul class="submenu">
+                    <li><a href="#quienes-somos">¿Quiénes somos?</a></li>
+                    <li><a href="#proposito">¿Cuál es el propósito?</a></li>
+                    <li><a href="#recomendaciones">Recomendaciones generales</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Contenido -->
+    <div class="contenido">
+        <section id="quienes-somos">
+            <h2>¿Quiénes somos?</h2>
+            <p>Somos un equipo dedicado a proporcionar información útil y de calidad para nuestros usuarios.</p>
+        </section>
+
+        <section id="proposito">
+            <h2>¿Cuál es el propósito?</h2>
+            <p>Nuestro propósito es ayudar a las personas a acceder a información relevante y confiable de manera sencilla.</p>
+        </section>
+
+        <section id="recomendaciones">
+            <h2>Recomendaciones generales</h2>
+            <p>1. Mantén la información actualizada.<br>
+               2. Navega con responsabilidad y respeta las fuentes.<br>
+               3. Comparte los recursos que puedan ser útiles para otros.</p>
+        </section>
+    </div>
+</body>
+</html>
         <h2> Consejos para el Cuidado de Computadoras
         <h2>Recomendaciones Generales</h2>
         <ul>
