@@ -3,6 +3,169 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Lince - Cuidado y Mantenimiento de PC</title>
+    <link href="https://fonts.googleapis.com/css2?family=Aptos&display=swap" rel="stylesheet"> <!-- Fuente Aptos -->
+
+    <style>
+        /* Estilos generales */
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('lince.jpg'); /* Ruta de la imagen */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            font-family: 'Aptos', sans-serif; /* Fuente Aptos */
+            color: white;
+        }
+
+        h2 {
+            color: #E30613; /* Rojo UVM */
+            padding: 10px;
+            font-size: 36px; /* Títulos más grandes */
+            text-align: center;
+        }
+
+        header {
+            background-color: #E30613;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        header .logo a {
+            text-decoration: none;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Menú desplegable */
+        .dropdown-content {
+            display: none;
+        }
+
+        /* Mostrar menú al hacer clic */
+        nav ul li:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #E30613;
+        }
+
+        /* Fondo blanco transparente para secciones */
+        .section-container {
+            background: rgba(255, 255, 255, 0.8); /* Fondo blanco con transparencia */
+            color: #333; /* Texto oscuro para destacar */
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px auto;
+            text-align: center;
+            position: relative;
+        }
+
+        #quienessomos-container {
+            width: 70%; /* Sección más grande */
+        }
+
+        #proposito-container {
+            width: 60%; /* Sección mediana */
+        }
+
+        #recomendaciones-container {
+            width: 50%; /* Sección más pequeña */
+        }
+
+        /* Estilo para el contenido oculto */
+        .section-content {
+            display: none; /* Ocultar contenido por defecto */
+            padding: 10px;
+        }
+
+        /* Mostrar contenido al pasar el mouse */
+        .section-container:hover .section-content {
+            display: block;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin: 20px 0;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: #E30613;
+        }
+
+        ul li a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="#">Proyecto Lince - Cuidado y Mantenimiento de PC</a>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="javascript:void(0)" 
+                <li>
+                    <a href="javascript:void(0)" onclick="toggleSection('menu-desplegable')">Menú</a>
+                    <div id="menu-desplegable" class="dropdown-content">
+                        <a href="#quienessomos">¿Quiénes somos?</a>
+                        <a href="#proposito">¿Cuál es el propósito?</a>
+                        <a href="#recomendaciones">Recomendaciones principales</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto Lince - Enlaces de Interés</title>
     <style>
         body {
@@ -69,5 +232,38 @@
         </ul>
     </section>
 
+</body>
+</html>
+
+        <!-- ¿Quiénes somos? -->
+        <section id="quienessomos">
+            <div id="quienessomos-container" class="section-container">
+                <h2>¿Quiénes somos?</h2>
+                <div class="section-content">
+                    <p>Somos un equipo de expertos dedicados al cuidado y mantenimiento de computadoras.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ¿Cuál es el propósito? -->
+        <section id="proposito">
+            <div id="proposito-container" class="section-container">
+                <h2>¿Cuál es el propósito?</h2>
+                <div class="section-content">
+                    <p>Proporcionamos soluciones efectivas para optimizar el rendimiento de tu PC.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recomendaciones principales -->
+        <section id="recomendaciones">
+            <div id="recomendaciones-container" class="section-container">
+                <h2>Recomendaciones principales</h2>
+                <div class="section-content">
+                    <p>Te brindamos los mejores consejos para mantener tu computadora en excelente estado.</p>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
