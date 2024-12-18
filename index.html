@@ -38,7 +38,7 @@
             text-align: center;
             margin-top: 20px;
             padding: 10px;
-            background: #007BFF;
+            background: red;
             color: white;
         }
     </style>
@@ -231,6 +231,44 @@
             });
         }
     </script>
+    <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tríptico Interactivo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="triptico">
+        <div class="panel" id="panel1">
+            <h2>¿Quiénes somos?</h2>
+            <p>Somos una empresa dedicada a...</p>
+            <button onclick="mostrarInfo(1)">Leer más</button>
+            <div class="info-extra" id="info1">
+                <p>Ofrecemos soluciones innovadoras...</p>
+            </div>
+        </div>
+        <div class="panel" id="panel2">
+            <h2>¿Cuál es el propósito?</h2>
+            <p>Buscamos mejorar la vida de...</p>
+            <button onclick="mostrarInfo(2)">Leer más</button>
+            <div class="info-extra" id="info2">
+                <p>Nuestro propósito es construir un futuro...</p>
+            </div>
+        </div>
+        <div class="panel" id="panel3">
+            <h2>Recomendaciones generales</h2>
+            <p>Para aprovechar al máximo...</p>
+            <button onclick="mostrarInfo(3)">Leer más</button>
+            <div class="info-extra" id="info3">
+                <p>Recuerda siempre seguir las mejores prácticas...</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
 
 </body>
 </html>
