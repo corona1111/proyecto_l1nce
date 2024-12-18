@@ -4,7 +4,173 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto Lince - Cuidado y Mantenimiento de PC</title>
-    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Estilos en línea -->
+    <link href="https://fonts.googleapis.com/css2?family=Aptos&display=swap" rel="stylesheet"> <!-- Fuentes Aptos -->
+    
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: 'Aptos', sans-serif; /* Usando la fuente Aptos */
+            margin: 0;
+            padding: 0;
+            background-color: #fff; /* Fondo blanco */
+            color: #333; /* Texto gris oscuro */
+        }
+
+        h2 {
+            color: white; /* Color blanco para los títulos */
+            padding: 10px;
+            font-size: 36px; /* Títulos más grandes */
+            background-color: #E30613; /* Fondo rojo UVM */
+            text-align: center; /* Centrar texto */
+            margin-top: 0;
+            margin-bottom: 20px;
+            opacity: 0;
+            transform: translateY(-20px);
+            animation: slideIn 0.6s ease-out forwards; /* Animación para los títulos */
+        }
+
+        @keyframes slideIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Estilos del encabezado */
+        header {
+            background-color: #E30613; /* Rojo UVM */
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            animation: fadeIn 1s ease-in-out; /* Animación de desvanecimiento */
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        header .logo a {
+            text-decoration: none;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* Estilos del menú de navegación */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            position: relative;
+            animation: fadeInUp 0.5s ease-in-out forwards; /* Animación de aparición para los enlaces */
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Estilos del menú desplegable */
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333; /* Fondo negro */
+            min-width: 160px;
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #E30613; /* Rojo al pasar el mouse */
+        }
+
+        /* Estilos del contenido */
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        section {
+            margin: 20px 0;
+        }
+
+        section ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        section ul li {
+            margin: 10px 0;
+        }
+
+        section ul li a {
+            text-decoration: none;
+            color: #E30613; /* Color rojo */
+            animation: fadeInLeft 0.7s ease-out forwards; /* Animación para los enlaces */
+        }
+
+        section ul li a:hover {
+            text-decoration: underline;
+        }
+
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+    </style>
+    
+    <!-- Script para mostrar contenido al hacer clic -->
+    <script>
+        function toggleMenu(id) {
+            const menu = document.getElementById(id);
+            menu.style.display = (menu.style.display === "block") ? "none" : "block";
+        }
+    </script>
 </head>
 <body>
 
@@ -14,10 +180,10 @@
         </div>
         <nav>
             <ul class="nav-links">
-                <li><a href="#enlaces">Enlaces de interés</a></li>
+                <li><a href="javascript:void(0)" onclick="toggleMenu('enlaces')">Enlaces de interés</a></li>
                 <li class="dropdown">
-                    <a href="#" class="dropbtn">Menú</a>
-                    <div class="dropdown-content">
+                    <a href="javascript:void(0)" onclick="toggleMenu('menu-desplegable')">Menú</a>
+                    <div id="menu-desplegable" class="dropdown-content">
                         <a href="#quienessomos">¿Quiénes somos?</a>
                         <a href="#proposito">¿Cuál es el propósito?</a>
                         <a href="#recomendaciones">Recomendaciones principales</a>
@@ -28,9 +194,14 @@
     </header>
 
     <main>
-        <section id="enlaces">
+        <section id="enlaces" style="display: none;">
             <h2>Enlaces de interés</h2>
             <p>Aquí puedes incluir algunos enlaces útiles sobre el cuidado y mantenimiento de PC.</p>
+            <ul>
+                <li><a href="https://www.example.com" target="_blank">Enlace 1</a></li>
+                <li><a href="https://www.example.com" target="_blank">Enlace 2</a></li>
+                <li><a href="https://www.example.com" target="_blank">Enlace 3</a></li>
+            </ul>
         </section>
 
         <section id="quienessomos">
