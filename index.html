@@ -322,7 +322,7 @@ Aplicando estas recomendaciones, no solo mejorarás el rendimiento de tu computa
             sections.forEach(section => section.style.display = 'none');
 
             // Mostrar la sección seleccionada
-            const targetSection = document.getElementById(sectionId);
+            const targetSection = document.getElementById(sectionId + '-container');
             if (targetSection) {
                 targetSection.style.display = 'block';
                 targetSection.scrollIntoView({ behavior: 'smooth' });
