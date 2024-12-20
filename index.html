@@ -288,18 +288,17 @@ Aplicando estas recomendaciones, no solo mejorarás el rendimiento de tu computa
             </div>
         </section>
         </main>
-    <script>
-        // Función para mostrar una sección específica
-        function showSection(sectionId) {
-            // Quitar la clase 'active' de todas las secciones
-            const sections = document.querySelectorAll('.section-container');
-            sections.forEach(section => section.classList.remove('active'));
 
-            // Añadir la clase 'active' a la sección seleccionada
+	<script>
+        function showSection(sectionId) {
+            // Ocultar todas las secciones
+            const sections = document.querySelectorAll('.section-container');
+            sections.forEach(section => section.style.display = 'none');
+
+            // Mostrar la sección seleccionada
             const targetSection = document.getElementById(sectionId);
             if (targetSection) {
-                targetSection.classList.add('active');
-                // Desplazar suavemente a la sección seleccionada
+                targetSection.style.display = 'block';
                 targetSection.scrollIntoView({ behavior: 'smooth' });
             }
         }
