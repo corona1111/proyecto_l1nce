@@ -181,9 +181,30 @@
             <ul>
                 <li><a href="https://www.canva.com/design/DAGZkYrXUwU/udqmckxzVMtjSEaxpKQlBQ/view?utm_content=DAGZkYrXUwU&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hc06cd2f65e" target="_blank">Enlace 1</a></li>
                 <li><a href="https://www.canva.com/design/DAGZqLLq2qY/72L17GS8LDPfi081l6PLkA/view?utm_content=DAGZqLLq2qY&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=ha6c1d5b2d1" target="_blank">Enlace 2</a></li>
-                <li><a href="https://www.example.com" target="_blank">Enlace 3</a></li>
+                <li><a href="https://www.youtube.com/watch?v=hszbT3YJd_I" target="_blank">Enlace 3</a></li>
             </ul>
         </section>
+	    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="#">Proyecto Lince - Cuidado y Mantenimiento de PC</a>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#quienessomos" onclick="showSection('quienessomos')">¿Quiénes somos?</a>
+                </li>
+                <li>
+                    <a href="#proposito" onclick="showSection('proposito')">¿Cuál es el propósito?</a>
+                </li>
+                <li>
+                    <a href="#recomendaciones" onclick="showSection('recomendaciones')">Recomendaciones principales</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
     <main>
         <!-- ¿Quiénes somos? -->
         <section id="quienessomos">
@@ -281,7 +302,21 @@ Aplicando estas recomendaciones, no solo mejorarás el rendimiento de tu computa
                 </div>
             </div>
         </section>
+    <script>
+        // Función para mostrar una sección específica
+        function showSection(sectionId) {
+            // Quitar la clase 'active' de todas las secciones
+            const sections = document.querySelectorAll('.section-container');
+            sections.forEach(section => section.classList.remove('active'));
 
+            // Añadir la clase 'active' a la sección seleccionada
+            const targetSection = document.getElementById(sectionId);
+            if (targetSection) {
+                targetSection.classList.add('active');
+                // Desplazar suavemente a la sección seleccionada
+                targetSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
 
     </main>
 </body>
